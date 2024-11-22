@@ -1,0 +1,254 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding-top: 60px; /* Offset for fixed header */
+  }
+  
+  /* Full Width Header */
+  .main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 100;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .header-right{
+    margin-right: 40px;
+    gap: 10px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .logo span {
+    color: #007bff;
+  }
+  
+  /* Sidebar */
+  /*.sidebar {
+    width: 50px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .sidebar-item {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }*/
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s; 
+    padding-top: 60px;
+    margin-top: 45px;
+  }
+  
+  .sidebar li {
+    padding: 8px 8px 8px 2px;
+    font-size: 10px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  .sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  /* Main Content Section */
+
+  main {
+    padding: 20px;
+    width: 100%;
+    transition: margin-left 0.5s;
+  padding: 16px;
+  }
+  .open-btn {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #111;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .open-btn:hover {
+    background-color: #444;
+  }
+  
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .content-header h2{
+    color: #007bff;
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .description {
+    margin-bottom: 20px;
+    background-color: #ddd;
+    border-radius: 3px;
+    padding: 20px;
+  }
+  
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .card-header {
+    display: flex;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    width: 100%  ;
+    padding: 10px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 1.25em;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.heading{
+    flex: 1;
+    text-align: center;
+}
+.info{
+    margin-top: 20px;
+    flex:0 0 auto;
+    text-align: right;
+}
+.card-footer {
+    text-align: center;
+}
+
+.card-footer a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 10px;
+}
+  
+  .thread-section input,
+  .thread-options select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .sub-thread-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Accordion */
+  .accordion-item {
+    margin-top: 10px;
+  }
+  
+  .accordion-header {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    display: none;
+    border: 1px solid #ddd;
+  }
+  
+  .accordion-header.active + .accordion-content {
+    display: block;
+  }
+  
+  /* Floating Action Buttons */
+  .floating-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .faq-btn, .help-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
+  

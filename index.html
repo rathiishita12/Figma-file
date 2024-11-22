@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Project Management</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Full Width Header -->
+    <header class="main-header">
+      <div class="logo">
+        <h1>DEEP <span>THOUGHT</span></h1>
+      </div>
+      <div class="header-right">
+        <button style="font-size:24px;border-radius:50%;background-color: blue;color: white;"> <i class="fa fa-home"></i></button>
+        <button style="font-size:24px;border-radius:50%;background-color: blue;color: white;"> <i class="fa fa-binoculars"></i></button>
+        <button style='font-size:24px;border-radius:50%;background-color: blue;color: white;'><i class='fa fa-wrench'></i></button>
+        <button style="font-size:24px;border-radius:50%;background-color: blue;color: white;"> <i class="fa fa-bell"></i></button>
+        <button style="font-size:24px;border-radius:50%;"><i class="fa fa-user"></i></button>
+        <i style="font-size:26px; color:blue" class="fa">&#xf142;</i>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()" style="font-size: large; text-decoration: none;background-color: black;color: white;width: 220px;">Journey Board <span style="text-align: right;">&#11013;</span></a>
+      <ul style="list-style-type: circle;">
+        <li><h3>Explore the world of management</h3></li>
+        <li>Technical Project Management</li>
+        <li>Threadbuild</li>
+        <li>Structure your Pointers</li>
+        <li>4SA Method</li>
+      </ul>
+    </div>
+      
+
+    <!-- Main Content Section -->
+    <main>
+      <button class="open-btn" onclick="openSidebar()">&#129030;<br>1</button>
+      <section class="content-header">
+        <h2>Technical Project Management</h2>
+        <button class="submit-btn">Submit Task</button>
+      </section>
+      <p class="description">
+        <b style="font-size: large;">Explore the world of management.</b><br><br>
+        As a project manager, you play an important role in leading a project through initiation, planning, execution, monitoring, controlling, and completion. How? Do you want to manage each and every step of your life?
+      </p>
+
+      <div class="content-grid">
+        <!-- Card 1: Technical Project Management -->
+        <div class="card">
+            <div class="card-header">
+                <div class="heading"><h3>Technical Project Management</h3></div>
+                <div class="info"><i class="material-icons" style="font-size:30px;color:white">info</i></div>
+            </div>
+            <div class="card-content">
+                <p><b>Description:</b> Story of Alignment Scope of Agility Specific Accountable Staggering Approach</p>
+            </div>
+            <div class="card-footer">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/xyz123" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Card 2: Threadbuild -->
+        <div class="card">
+            <div class="card-header">
+                <div class="heading"><h3>Threadbuild</h3></div>
+                <div class="info"><i class="material-icons" style="font-size:30px;color:white">info</i></div>
+            </div>
+            <div class="card-content">
+                <p><b>Description:</b> Watch the video and threadbuild, and jot out key threads while watching the video</p>
+            </div>
+
+          <div class="thread-section">
+            <input type="text" placeholder="Sub thread 1">
+            <input type="text" placeholder="Sub Interpretation 1">
+          </div>
+          <div class="thread-options">
+            <select>
+              <option>Select Category</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+            </select>
+            <button class="sub-thread-btn">+ Sub-Thread</button>
+          </div>
+          <textarea placeholder="Summary for Thread A"></textarea>
+        </div>
+
+        <!-- Card 3: Structure Your Pointers -->
+        <div class="card">
+            <div class="card-header">
+                <div class="heading"><h3>Structure your Pointers</h3></div>
+                <div class="info"><i class="material-icons" style="font-size:30px;color:white">info</i></div>
+            </div>
+            <div class="card-content">
+                <p><b>Description:</b> Write a 300-400 word article from your thread. Publish your understanding and showcase it to the entire world</p>
+            </div>
+            <b>Title</b><br>
+            <textarea rows="1"></textarea>
+            <br><br>
+            <b>Content</b><br>
+          <textarea rows="5"></textarea>
+        </div>
+
+        <!-- Card 4: 4SA Method -->
+        <div class="card">
+            <div class="card-header">
+                <div class="heading"><h3>4SA Method</h3></div>
+                <div class="info"><i class="material-icons" style="font-size:30px;color:white">info</i></div>
+            </div>
+            <div class="card-content">
+                <p><b>Description:</b> To explore more read more</p>
+            </div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header" style="font-size: larger;">&#129169 Introduction</button>
+              <div class="accordion-content">
+                <p>The 4SA Method, How to bring an idea into progress?</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header" style="font-size: large;">&#129169 Thread A</button>
+              <div class="accordion-content">
+                <p>How are you going to develop your strategy?</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">Example 1</button>
+              <div class="accordion-content">
+                <p>You have a concept. How will you put it into progress?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+      <button class="faq-btn">?</button>
+      <button class="faq-btn"> <i class='fa fa-group'></i></button>
+      <button class="faq-btn"> <i class='fa fa-calendar'></i></button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
